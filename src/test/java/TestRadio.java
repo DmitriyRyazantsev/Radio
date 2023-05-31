@@ -2,9 +2,9 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 
-public class testRadio {
+public class TestRadio {
     @Test
-    public void stationtest() {
+    public void stationTest() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(5);
@@ -16,7 +16,7 @@ public class testRadio {
     }
 
     @Test
-    public void stationtest1() {
+    public void stationTest1() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(5);
@@ -28,7 +28,7 @@ public class testRadio {
     }
 
     @Test
-    public void stationtest2() {
+    public void stationTest2() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(9);
@@ -40,7 +40,7 @@ public class testRadio {
     }
 
     @Test
-    public void stationtest3() {
+    public void stationTest3() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(-9);
@@ -51,7 +51,7 @@ public class testRadio {
         Assertions.assertEquals(expected, actual);
     }
     @Test
-    public void stationtest4() {
+    public void stationTest4() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(33);
