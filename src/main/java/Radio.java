@@ -14,7 +14,7 @@ public class Radio {
 
     public void nextStation() {
         if (currentStation != maxStation) {
-            currentStation = currentStation +1;
+            currentStation = currentStation + 1;
         } else {
             currentStation = 0;
         }
@@ -22,7 +22,7 @@ public class Radio {
 
     public void prevStation() {
         if (currentStation != 0) {
-            currentStation = currentStation -1;
+            currentStation = currentStation - 1;
         } else {
             currentStation = maxStation;
         }
@@ -31,7 +31,7 @@ public class Radio {
     public void increaseVolume() {
         if (currentVolume < maxVolume) {
             currentVolume = currentVolume + 1;
-        }else {
+        } else {
             currentVolume = maxVolume;
         }
 
@@ -40,7 +40,7 @@ public class Radio {
     public void downVolume() {
         if (currentVolume > minVolume) {
             currentVolume = currentVolume - 1;
-        }else {
+        } else {
             currentVolume = minVolume;
         }
     }
