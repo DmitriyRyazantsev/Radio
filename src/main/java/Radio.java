@@ -5,16 +5,16 @@ public class Radio {
     private int maxVolume;
     private int minVolume;
 
-
     public Radio() {
-        maxStation = 30;
+        maxStation = 9;
         maxVolume = 100;
         minVolume = 0;
     }
 
+
     public void nextStation() {
-        if (currentStation != maxStation) {
-            currentStation = currentStation +1;
+        if (currentStation != 9) {
+            currentStation = currentStation + 1;
         } else {
             currentStation = 0;
         }
@@ -22,26 +22,26 @@ public class Radio {
 
     public void prevStation() {
         if (currentStation != 0) {
-            currentStation = currentStation -1;
+            currentStation = currentStation - 1;
         } else {
-            currentStation = maxStation;
+            currentStation = 9;
         }
     }
 
     public void increaseVolume() {
-        if (currentVolume < maxVolume) {
+        if (currentVolume < 100) {
             currentVolume = currentVolume + 1;
-        }else {
-            currentVolume = maxVolume;
+        } else {
+            currentVolume = 100;
         }
 
     }
 
     public void downVolume() {
-        if (currentVolume > minVolume) {
+        if (currentVolume > 0) {
             currentVolume = currentVolume - 1;
-        }else {
-            currentVolume = minVolume;
+        } else {
+            currentVolume = 0;
         }
     }
 
@@ -54,7 +54,7 @@ public class Radio {
         if (currentStation < 0) {
             return;
         }
-        if (currentStation > maxStation) {
+        if (currentStation > 9) {
             return;
         }
         this.currentStation = currentStation;
@@ -65,14 +65,15 @@ public class Radio {
     }
 
     public void setCurrentVolume(int currentVolume) {
-        if (currentVolume < minVolume) {
+        if (currentVolume < 0) {
             return;
         }
-        if (currentVolume > maxVolume) {
+        if (currentVolume > 100) {
             return;
         }
         this.currentVolume = currentVolume;
     }
 }
+
 
 
