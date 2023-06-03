@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
     @Test
-    public void stationTest() {
+    public void stationtest() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(5);
@@ -16,7 +16,7 @@ public class RadioTest {
     }
 
     @Test
-    public void stationTest1() {
+    public void stationtest1() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(30);
@@ -28,7 +28,7 @@ public class RadioTest {
     }
 
     @Test
-    public void stationTest2() {
+    public void stationtest2() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(9);
@@ -40,7 +40,7 @@ public class RadioTest {
     }
 
     @Test
-    public void stationTest3() {
+    public void stationtest3() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(-9);
@@ -50,8 +50,9 @@ public class RadioTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
-    public void stationTest4() {
+    public void stationtest4() {
         Radio radio = new Radio();
 
         radio.setCurrentStation(33);
@@ -143,6 +144,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void volumeTest3() {
         Radio radio = new Radio();
@@ -153,6 +155,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void volumeTest4() {
         Radio radio = new Radio();
@@ -188,6 +191,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void increaseVolumeTest2() {
         Radio radio = new Radio();
@@ -247,6 +251,7 @@ public class RadioTest {
         int actual = radio.getCurrentVolume();
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void downVolumeTest4() {
         Radio radio = new Radio();
