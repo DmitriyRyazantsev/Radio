@@ -5,11 +5,13 @@ public class Radio {
     private int maxVolume = 100;
     private int minVolume = 0;
 
-    public Radio(int maxStation) {
+    public Radio() {
         this.maxStation = maxStation;
 
     }
-
+    public Radio(int maxStation) {
+        this.maxStation = maxStation;
+    }
 
 
     public void nextStation() {
